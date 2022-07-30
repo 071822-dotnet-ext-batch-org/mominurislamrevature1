@@ -6,49 +6,12 @@ namespace StringManipulationChallenge
     {
         static void Main(string[] args)
         {
-
-           // String fName = "sumon";
-           // String lName = "Alom";
             /*
             *
             * implement the required code here and within the methods below.
             *
             */
             //when you call a method, you call it with arguments. The args values are held in a variable.
-            Console.WriteLine("Enter a LowerCase String");
-            string userInput1 = Console.ReadLine();
-            String stringToUpperResult = StringToUpper(userInput1);
-            Console.WriteLine(stringToUpperResult);
-
-            Console.WriteLine("Enter a UpperCase String");
-            string userInput2 = Console.ReadLine();
-            String stringLowerResult = StringToLower(userInput2);
-            Console.WriteLine(stringLowerResult);
-
-            Console.WriteLine("Enter a whitespace string");
-            string userInput3 = Console.ReadLine();
-            String stringTrimResult = StringTrim(userInput3);
-            Console.WriteLine(stringTrimResult);
-
-            Console.WriteLine("Enter a Substring string");
-            string userInput4 = Console.ReadLine();
-            String stringSubstringResult = StringSubstring(userInput4, 1, 2);
-            Console.WriteLine(stringSubstringResult );
-
-            /* String stringSearchCharResult = SearchChar(userInput1,2);
-            Console.WriteLine(stringSearchCharResult);
-            */
-            Console.WriteLine("Enter your First Name");
-            string fName = Console.ReadLine();
-             Console.WriteLine("Enter your First Name");
-            string lName = Console.ReadLine();
-            String stringConcatNamesResult = ConcatNames(fName,lName);
-            Console.WriteLine(stringConcatNamesResult);
-
-             
-           
-
-
 
 
         }
@@ -75,8 +38,7 @@ namespace StringManipulationChallenge
         /// <returns></returns>       
         public static string StringToLower(string usersString)
         {
-           // throw new NotImplementedException("StringToUpper method not implemented.");
-            return usersString.ToLower();
+            throw new NotImplementedException("StringToUpper method not implemented.");
         }
 
         /// <summary>
@@ -89,8 +51,7 @@ namespace StringManipulationChallenge
         /// <returns></returns>
         public static string StringTrim(string usersStringWithWhiteSpace)
         {
-            //throw new NotImplementedException("StringTrim method not implemented.");
-             return usersStringWithWhiteSpace.Trim();
+            throw new NotImplementedException("StringTrim method not implemented.");
         }
 
         /// <summary>
@@ -105,10 +66,7 @@ namespace StringManipulationChallenge
         /// <returns></returns>
         public static string StringSubstring(string x, int firstElement, int lengthOfSubsring)
         {
-            //throw new NotImplementedException("StringSubstring method not implemented.");
-            String result = x.Substring(firstElement,lengthOfSubsring);
-            return result;
-
+            throw new NotImplementedException("StringSubstring method not implemented.");
         }
 
         /// <summary>
@@ -123,9 +81,7 @@ namespace StringManipulationChallenge
         /// <returns></returns>
         public static int SearchChar(string userInputString, char charUserWants)
         {
-            //throw new NotImplementedException("SearchChar method not implemented.");
-            int result = userInputString.IndexOf(charUserWants);
-            return result;
+            throw new NotImplementedException("SearchChar method not implemented.");
         }
 
         /// <summary>
@@ -140,9 +96,7 @@ namespace StringManipulationChallenge
         /// <returns></returns>
         public static string ConcatNames(string fName, string lName)
         {
-            //throw new NotImplementedException("ConcatNames method not implemented.");
-            string resultConcat = fName + " " +lName;
-            return resultConcat;
+            throw new NotImplementedException("ConcatNames method not implemented.");
         }
     }//end of program
 }
