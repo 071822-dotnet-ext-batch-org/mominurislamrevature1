@@ -146,7 +146,9 @@ namespace _5_OperatorsChallenge
         /// <param name="num1"></param>
         /// <param name="num2"></param>
         /// <returns></returns>
-        public static bool And(int num1, int num2) { return (num1 != 0 && num1 > num2); }
+        public static bool And(int num1, int num2) { 
+            return (num1 != 0 && num1 > num2); 
+            }
 
         /// <summary>
         /// This method takes two ints and returns true if num1 is
@@ -154,6 +156,8 @@ namespace _5_OperatorsChallenge
         /// </summary>
         /// <param name="num1"></param>
         /// <returns></returns>
-        public static bool Or(int num1, int num2) { return (num1 == num2 || num1 < 0); }
+        public static bool Or(int num1, int num2) { 
+            return (num1 == num2 || num1 < 0);
+             }
     }
 }
