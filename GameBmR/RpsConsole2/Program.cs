@@ -10,7 +10,12 @@ namespace RpsConsole2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Enter to get Customer names");
+            Console.ReadLine();
+
             GamePlay gameplay = new GamePlay();
+            gameplay.testQuery();
+
             gameplay.ShowAccessAmbiguity();
 
             // maybe I want to add the ability to check out my stats without playing a game?

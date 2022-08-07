@@ -1,4 +1,5 @@
 ﻿using Models;
+using RepoLayer;
 namespace BusinessLayer
 {
     public class GamePlay : IGamePlay, IGetStuff
@@ -10,6 +11,7 @@ namespace BusinessLayer
             or methodology of the method used b the main program.
         **/
 
+        private readonly AdonetAccess _repo = new AdonetAccess();
         private readonly Random rand = new Random();// the Random class gets us a pseudorandom decimal between 0 and 1.
         // These List<>'s are analogous to saving the data permanently in a Db. (We aren't doing that... YET.)
         //create a List<Game> to 
@@ -266,6 +268,11 @@ namespace BusinessLayer
             p.testint = testint;
             Console.WriteLine(p.testint);
         }
-        
-       }//EoC
+
+        public void testQuery()
+        {
+            // something logicl to do here
+            _repo.testQuery();
+        }
+    }//EoC
 }//EoN
