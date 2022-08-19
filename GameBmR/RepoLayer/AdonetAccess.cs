@@ -13,7 +13,7 @@ namespace RepoLayer
        
         public void testQuery()
         {
-
+ 
            /*  
            using (SqlCommand command = new SqlCommand("SELECT * Customers", conn)) {
             conn.Open();
